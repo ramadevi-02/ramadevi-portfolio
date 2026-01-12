@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Ramadevi Portfolio - Java Full Stack Developer"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Title -->
+    <title>Ramadevi Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config for Gradients, Glow, Dark Theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8b5cf6", // purple
+              secondary: "#ec4899", // pink
+              accent: "#f43f5e", // red
+            },
+            boxShadow: {
+              glow: "0 0 15px rgba(139,92,246,0.7), 0 0 30px rgba(236,72,153,0.5)",
+            },
+            animation: {
+              pulseFast: "pulse 1s ease-in-out infinite",
+              spinSlow: "spin 4s linear infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fonts (Optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Smooth Scroll CSS (Optional for fallback) -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
