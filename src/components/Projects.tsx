@@ -4,7 +4,8 @@ interface Project {
   title: string;
   status: string;
   category: string;
-  description: string;
+  description?: string;
+  features?: string[];
   techStack: string;
 }
 
@@ -14,15 +15,25 @@ const projectList: Project[] = [
     status: "Completed",
     category: "Web App",
     description:
-      "Developed a responsive e-commerce web application for electric vehicle products using React.js, Java, MySQL. Features include product listing, search, authentication, and order management.",
-    techStack: "React.js, Java, REST APIs, MySQL, MongoDB, HTML, CSS, JS, Git",
+      "A web application for selling electric vehicle products online. Users can browse products, search and filter items, add them to cart, and place orders.",
+    features: [
+      "Developed responsive UI using React.js and managed state with Redux",
+      "Implemented backend logic and REST APIs using Java to handle products, users, and orders",
+      "Integrated MySQL/MongoDB databases for efficient data storage and retrieval",
+    ],
+    techStack: "React.js, Redux, Java, REST APIs, MySQL, MongoDB, HTML, CSS, JS, Git",
   },
   {
     title: "Cardinal Life Sciences",
     status: "Completed",
     category: "Web App",
     description:
-      "Developed a Product Catalog System to manage lab equipment, chemicals, and consumables. Implemented CRUD, search, REST APIs using React.js, Redux, Java, MySQL, MongoDB.",
+      "A product management system for a life sciences company to organize and manage laboratory equipment, chemicals, and consumables.",
+    features: [
+      "Built frontend components using React.js and Redux",
+      "Implemented backend logic and REST APIs using Java",
+      "Integrated MySQL/MongoDB databases for efficient data storage",
+    ],
     techStack: "React.js, Redux, Java, REST APIs, MySQL, MongoDB, HTML, CSS, JS, Git",
   },
 ];
@@ -68,11 +79,17 @@ const Projects: React.FC = () => {
             className="p-6 rounded-2xl bg-gray-800 backdrop-blur-sm shadow-lg hover:scale-105 transition transform glow"
           >
             <h3 className="text-xl font-bold text-purple-400 mb-2">
-              {proj.title} <span className="text-sm text-green-400">({proj.status})</span>
+              {proj.title}{" "}
+              <span className="text-sm text-green-400">({proj.status})</span>
             </h3>
             <p className="text-gray-300 mb-2">{proj.description}</p>
+            <ul className="list-disc list-inside text-gray-300 mb-2">
+              {proj.features?.map((feat, idx) => (
+                <li key={idx}>{feat}</li>
+              ))}
+            </ul>
             <p className="text-gray-400 text-sm">
-              <strong>Tech Stack:</strong> {proj.techStack}
+              Tech Stack: {proj.techStack}
             </p>
           </div>
         ))}
@@ -81,4 +98,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default Projects; // <- This fixes your import error
