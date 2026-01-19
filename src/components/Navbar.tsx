@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed w-full backdrop-blur-md bg-gray-900/50 z-50 shadow-lg p-4 flex justify-between items-center">
+    <nav className="fixed w-full backdrop-blur-md bg-gray-900/50 z-50 shadow-lg p-4 flex justify-end items-center">
      
 
       {/* Right Nav Links + Resume Button */}
