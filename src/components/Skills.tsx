@@ -1,6 +1,5 @@
-import React from "react";
-
-const Skills: React.FC = () => {
+import React from "react"
+  const  Skills: React.FC = () => {
   const frontend = ["React.js", "JavaScript", "HTML5", "CSS3", "Sass", "Bootstrap", "Redux", "Responsive Design", "UI/UX", "React Router"];
   const backend = ["Core Java", "OOPs", "Collections", "JDBC", "SQL (MySQL)", "Database Design", "CRUD Operations", "Error Handling"];
   const database = ["MySQL", "MongoDb", "Databas Desgign", "CRUD Operations"];

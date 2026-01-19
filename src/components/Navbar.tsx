@@ -3,14 +3,7 @@ import React from "react";
 const Navbar: React.FC = () => {
   return (
     <nav className="fixed w-full backdrop-blur-md bg-gray-900/50 z-50 shadow-lg p-4 flex justify-between items-center">
-      {/* Left Logo */}
-      <a href="#hero">
-        <img
-          src="https://tapportfolio.lovable.app/assets/logo-CxDGoOCE.png"
-          alt="TAP Academy Logo"
-          className="h-10 hover:scale-105 transition-transform"
-        />
-      </a>
+     
 
       {/* Right Nav Links + Resume Button */}
       <div className="space-x-4 flex items-center">

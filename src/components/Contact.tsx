@@ -12,7 +12,6 @@ const Contact: React.FC = () => {
     alert("Form submitted! (This is a demo, no backend connected.)");
     setFormData({ name: "", email: "", message: "" });
   };
- 
   return (
     <section id="contact" className="py-20 px-6 md:px-20 bg-gray-900">
       <h2 className="text-3xl md:text-4xl font-bold text-purple-400 mb-6">Contact</h2>

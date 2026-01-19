@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-purple-400 animate-pulse">
+      <h1 className="t*+3ext-4xl md:text-6xl font-bold mb-4 text-purple-400 animate-pulse">
           Hi, I'm Unnam Ramadevi
         </h1>
         <h2 className="text-2xl md:text-4xl mb-4 font-semibold">
-          JAVA Full Stack Developer
+          JAVA FullStack Developer
         </h2>
         <p className="text-lg md:text-xl mb-6">
           Full stack developer focused on clean code. Currently Open to New Opportunities!
